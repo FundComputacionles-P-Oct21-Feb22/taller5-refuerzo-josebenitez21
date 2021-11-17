@@ -1,0 +1,53 @@
+Problema 3
+En un comercial de venta de llantas de vehículos de la ciudad de Loja, se hace un descuento del 10% si el cliente tiene pide un juego de llantas para un vehículo tipo "auto", 
+del 20% si el cliente pide un juego de llantas para un vehículo tipo "camioneta", del 30% el cliente pide un juego de llantas para un vehículo tipo "bus". Elaborar un solución
+que pida como datos de entrada el tipo de vehículo y el valor del juego de llantas y el número de juegos de llantas para el vehículo. Y luego calcule e imprima el subtotal por pagar y el total por pagar.
+1.Inicio
+2.//variables
+3.modeloAuto, d[0,n]
+4.valorTotal, d[0,n]
+5.valorLlantas, d[0,n]
+6.numeroLlantas i,[0,n]
+7.tipoVehiculo x(50)[(a-z),(BS),(A-Z)]
+8.subTotal, d[0,n]
+9.descuento1,d[0,n]
+10.descuento2,d[0,n]
+11.descuento3,d[0,n]
+12.porcentaje1 ,d[0,n] <--- 10
+13.porcentaje2 ,d[0,n] <--- 20
+14.porcentaje3 ,d[0,n] <--- 30
+15.Escribir "Ingrese el modelo de vehículo que poseé"
+16.Leer modeloAuto
+17.Escribir "Ingrese el valor del juego de llantas"
+18.Leer valorLlantas
+19.Escribir "Ingrese el número de juegos de llantas a comprar"
+20.Leer numeroLlantas
+21.subtotal <-- valorLLantas * numeroLlantas
+22.Si  tipoVehiculo == "Auto" , entonces
+23.descuento1 <-- (subTotal * porcentaje1)/100
+24. //     subTotal    ---  100
+25. //         x       ---   10
+26.valorTotal <-- (subtotal - descuento1)
+27.De lo contrario, Si  tipoVehiculo == "Camioneta" , entonces
+28.descuento2 <-- (subTotal * porcentaje2)/100
+29.//     valorPlato    ---  100
+30.//         x         ---   20
+31.valorTotal <-- (subTotal - descuento2)
+32.De lo contrario, Si  tipoVehiculo == "bus" , entonces
+33.descuento3 <-- (subTotal * porcentaje3)/100
+34.//     valorPlato    ---  100
+35.//         x         ---   30
+36.valorTotal <-- (subTotal - descuento3)
+37.Fin si
+38.Fin si
+39.Escribir " El subTotal a pagar:" + subTotal + "El descuento es: " + descuento1||descuento2||descuento3
+40. + "El total a pagar es: " + valorTotal
+41.Fin
+42.
+43.
+44.
+45.
+42.
+43.
+44.
+45.
